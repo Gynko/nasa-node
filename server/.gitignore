@@ -1,0 +1,25 @@
+# Node.js / Express backend
+node_modules/
+npm-debug.log
+services/mongo.js
+
+# React frontend
+frontend/node_modules/
+frontend/.env
+frontend/build/
+frontend/.cache/
+frontend/public/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+```
