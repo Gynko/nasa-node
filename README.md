@@ -269,4 +269,4 @@ But before that, I will move on to learn about more things to do in the Node con
 2. Continuous integration and Delivery
 3. Node production and the cloud (Docker + AWS)
 4. GraphQL
-5. Sockets with Node
+5. Web Sockets with Node
