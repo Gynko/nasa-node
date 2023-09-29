@@ -34,7 +34,7 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 
 # 1. What we are building
 
-Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data, with Node and its tools. List hosted on mongoDB.
+Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data, with Node and its tools. List is then sent our mongoDB database.
 ![Launch](https://i.postimg.cc/QCTzXZG7/Screenshot-2023-09-29-at-14-54-53.png)
 
 Here in Launch we have a list of all the launches that are not aborted. We can abort them.
