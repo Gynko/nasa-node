@@ -38,10 +38,10 @@ Here we can create Launches. The destination explanet dropdown is made of planet
 ![Launch](https://i.ibb.co/2cqFKdg/Screenshot-2023-09-29-at-14-54-53.png)
 
 Here in Launch we have a list of all the launches that are not aborted. We can abort them.
-![Launch](https://i.ibb.co/7GsCBLs/Screenshot-2023-09-29-at-14-55-02.png)
+![Upcoming](https://i.ibb.co/7GsCBLs/Screenshot-2023-09-29-at-14-55-02.png)
 
 Here we have a list of all launches past and present.
-![Launch](https://i.ibb.co/h1tk46y/Screenshot-2023-09-29-at-14-55-09.png)
+![History](https://i.ibb.co/h1tk46y/Screenshot-2023-09-29-at-14-55-09.png)
 
 # 1. Non-exhaustive list of what I learned
 
