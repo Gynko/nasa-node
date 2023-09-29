@@ -25,6 +25,9 @@ The frontend is old and contains vulnearabilities, so I didn't bother to update 
     - [2.2.2. planets.controller.js](#222-planetscontrollerjs)
     - [2.2.3. planets.model.js](#223-planetsmodeljs)
     - [2.2.4. planets.mongo.js](#224-planetsmongojs)
+- [3. Tricky parts](#3-tricky-parts)
+  - [3.1. In app.js](#31-in-appjs)
+  - [3.2. Database logic](#32-database-logic)
 
 # 1. List of what I learned
 
@@ -150,3 +153,72 @@ This would be the data access layer specific to planets.
 It would define the MongoDB schema for planets using tools like Mongoose.
 The schema would define the shape of planet documents, including fields and their types.
 This file would handle CRUD operations on the planets collection in MongoDB.
+
+# 3. Tricky parts
+
+## 3.1. In app.js
+
+1. The order of the middleware is important. For example, if you put the cors middleware after the express.static middleware, the static files will not be served with the correct headers, and you'll get errors in the browser console.
+2. "/_": This is a wildcard route in Express. The _ acts as a wildcard that matches any route for GET requests. So, any GET request that hasn't been matched by previous route handlers will be caught by this one. In the context of web applications, especially Single Page Applications (SPAs) built with frameworks like React or Vue, this pattern is very common. The reason is that SPAs handle routing on the client side. When a user navigates to a different route in their browser, the request goes to the server, which may not have a specific route defined for that path. By serving the main index.html for any unmatched routes, the server ensures that the SPA's client-side routing can take over and display the correct content or page. So, in essence, this catch-all route ensures that any unmatched GET request will return the main index.html file of the SPA, allowing the SPA's client-side router to then process the route and display the appropriate content.
+
+```js
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+});
+```
+
+## 3.2. Database logic
+
+Overall, there are a number of challenges when working with databases. One of the trickiest for me was to wrap my head around how to structure the code to interact with the database, like with the populateLaunch which has 2 parts - one with the axios.post (which is by the way one of these strange examples of a POST that is actually a GET: we need to use POST because we are sending a body, but we are not actually modifying anything in the database, we are just querying it).
+
+```js
+async function populateLaunches() {
+  console.log("Downloading launch data...");
+  const response = await axios.post(SPACEX_API_URL, {
+    query: {},
+    options: {
+      pagination: false,
+      populate: [
+        {
+          path: "rocket",
+          select: {
+            name: 1,
+          },
+        },
+        {
+          path: "payloads",
+          select: {
+            customers: 1,
+          },
+        },
+      ],
+    },
+  });
+  if (response.status !== 200) {
+    console.log("Problem downloading launch data");
+    throw new Error("Launch data download failed");
+  }
+
+  const launchDocs = response.data.docs;
+  for (const launchDoc of launchDocs) {
+    const payloads = launchDoc["payloads"];
+    const customers = payloads.flatMap((payload) => {
+      return payload["customers"];
+    });
+
+    const launch = {
+      flightNumber: launchDoc["flight_number"],
+      mission: launchDoc["name"],
+      rocket: launchDoc["rocket"]["name"],
+      launchDate: launchDoc["date_local"],
+      upcoming: launchDoc["upcoming"],
+      success: launchDoc["success"],
+      customers,
+    };
+
+    console.log(`${launch.flightNumber} ${launch.mission}`);
+
+    await saveLaunch(launch);
+  }
+}
+```
