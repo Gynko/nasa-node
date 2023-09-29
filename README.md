@@ -9,7 +9,7 @@ The project is a simple API that allows to query data about spaceX launches and 
 
 Since the course is a bit old (in tech time scale, one year old may be a lot! :D), I had to make some changes to the code to make it work with the latest versions of node, express, mongoose, etc.
 
-The frontend is old and contains vulnearabilities, so I didn't bother to update it.
+The frontend is old and contains vulnerabilities, so I didn't bother to update it.
 
 # Table of Contents <!-- omit in toc -->
 
