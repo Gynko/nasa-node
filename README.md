@@ -25,7 +25,7 @@ The frontend is old and contains vulnearabilities, so I didn't bother to update 
     - [2.2.2. planets.controller.js](#222-planetscontrollerjs)
     - [2.2.3. planets.model.js](#223-planetsmodeljs)
     - [2.2.4. planets.mongo.js](#224-planetsmongojs)
-- [3. Tricky parts](#3-tricky-parts)
+- [3. 💣 Tricky parts](#3--tricky-parts)
   - [3.1. In app.js](#31-in-appjs)
   - [3.2. Database logic](#32-database-logic)
 
@@ -154,7 +154,7 @@ It would define the MongoDB schema for planets using tools like Mongoose.
 The schema would define the shape of planet documents, including fields and their types.
 This file would handle CRUD operations on the planets collection in MongoDB.
 
-# 3. Tricky parts
+# 3. 💣 Tricky parts
 
 ## 3.1. In app.js
 
