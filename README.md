@@ -263,7 +263,7 @@ Though I think that things will fall more into place as soon as I will write my 
 
 I also think it will be beneficial to use a SQL database in my next project, to get a better understanding of the differences between SQL and NoSQL, and to get a better understanding of SQL in general.
 
-But before that, I will move on to learn about:
+But before that, I will move on to learn about more things to do in the Node context:
 
 1. Authentication and security
 2. Continuous integration and Delivery
