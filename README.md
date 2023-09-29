@@ -37,6 +37,12 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data.
 ![Launch](https://i.ibb.co/2cqFKdg/Screenshot-2023-09-29-at-14-54-53.png)
 
+Here in Launch we have a list of all the launches that are not aborted. We can abort them.
+![Launch](https://i.ibb.co/7GsCBLs/Screenshot-2023-09-29-at-14-55-02.png)
+
+Here we have a list of all launches past and present.
+![Launch](https://i.ibb.co/h1tk46y/Screenshot-2023-09-29-at-14-55-09.png)
+
 # 1. Non-exhaustive list of what I learned
 
 1. Node internals: js engine, apis, bindings, libuv. Really interesting to learn that many of the node apis are actually C++ code, and that the js engine is actually a C++ program.
