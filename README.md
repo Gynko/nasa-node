@@ -169,7 +169,8 @@ app.get("/*", (req, res) => {
 
 ## 3.2. Database logic
 
-Overall, there are a number of challenges when working with databases. One of the trickiest for me was to wrap my head around how to structure the code to interact with the database, like with the populateLaunch which has 2 parts - one with the axios.post (which is by the way one of these strange examples of a POST that is actually a GET: we need to use POST because we are sending a body, but we are not actually modifying anything in the database, we are just querying it).
+Overall, there are a number of challenges when working with databases. One of the trickiest for me was to wrap my head around how to structure the code to interact with the database, like with the populateLaunch which has 2 parts - one with the axios.post to get the data from the SpaceX api, and another to populate withi this data.
+The part getting data from spaceX is by the way one of these strange examples of a POST that is actually a GET: we need to use POST because we are sending a body, but we are not actually modifying anything in the database, we are just querying it.
 
 ```js
 async function populateLaunches() {
