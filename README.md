@@ -32,39 +32,50 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 
 # 1. Non-exhaustive list of what I learned
 
-1. Node internals: js engine, apis, bindings, libuv
-2. Callback queues
-3. Node Modules
-4. Package management
-5. Nodemon
-6. Express
-7. Web servers
-8. Model view controller pattern
-9. Middleware
-10. Route parameters
-11. Postman
-12. Dev dependencies
-13. Express routers
-14. Using files
-15. Template engines
-16. Layouts
-17. Streams
-18. Morgan
-19. Serving apps with client side routing
-20. Validation
-21. Testing: Jest, supertest
-22. Node performance: PM2 live clusters
-23. Node performance: zero downtime restarts
-24. Node performance: Worker threads
-25. Databases: SQL and NOSQL
-26. Databases: mongoDB + mongoose + node
-27. Databases: referential integrity
-28. Databases: upserting
-29. Databases: tests with Jest
-30. Using external APIs: running search queries on spaceX
-31. APIs: pagination
-32. APIs: minimizing api load
-33. Managing secrets: .env file
+1. Node internals: js engine, apis, bindings, libuv. Really interesting to learn that many of the node apis are actually C++ code, and that the js engine is actually a C++ program.
+2. Tthe event loop: is a loop that checks if the call stack is empty, and if so, it checks the callback queue, and if there is something in the callback queue, it pushes it to the call stack. The event loop is a C++ program, and it is part of the libuv library.
+3. The call stack: is a stack of functions that are being executed. When a function is called, it is pushed to the call stack, and when it is finished, it is popped from the call stack.
+4. The callback queue: is a queue of callback functions that are waiting to be executed. When a callback function is ready to be executed, it is pushed to the callback queue.
+5. The event loop, the event loop phases: the event loop is a loop that checks if the call stack is empty, and if so, it checks the callback queue, and if there is something in the callback queue, it pushes it to the call stack. The event loop is a C++ program, and it is part of the libuv library. The event loop has 6 phases: timers, pending callbacks, idle, prepare, poll, check, close callbacks. The event loop phases are not part of the js specification, they are part of the node implementation.
+6. The microtask queue: is a queue of microtasks that are waiting to be executed. When a microtask is ready to be executed, it is pushed to the microtask queue. Microtasks are executed before the next tick queue.
+7. The timers queue: is a queue of timers that are waiting to be executed. When a timer is ready to be executed, it is pushed to the timers queue. Timers are executed before the next tick queue.
+8. The poll phase
+9. The check phase
+10. The close phase
+11. The timers phase
+12. The pending phase
+13. The next tick queue
+14. Node Modules
+15. Package management
+16. Nodemon
+17. Express
+18. Web servers
+19. Model view controller pattern
+20. Middleware
+21. Route parameters
+22. Postman
+23. Dev dependencies
+24. Express routers
+25. Using files
+26. Template engines
+27. Layouts
+28. Streams
+29. Morgan
+30. Serving apps with client side routing
+31. Validation
+32. Testing: Jest, supertest
+33. Node performance: PM2 live clusters
+34. Node performance: zero downtime restarts
+35. Node performance: Worker threads
+36. Databases: SQL and NOSQL
+37. Databases: mongoDB + mongoose + node
+38. Databases: referential integrity
+39. Databases: upserting: upserting refers to an operation that inserts a new record if it doesn't exist or updates the existing record if it does.
+40. Databases: tests with Jest
+41. Using external APIs: running search queries on spaceX
+42. APIs: pagination
+43. APIs: minimizing api load
+44. Managing secrets: .env file
 
 # 2. 🌍 Overview of main sections
 
