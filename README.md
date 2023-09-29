@@ -3,7 +3,9 @@
 This follow along project is part of the ZeroToMastery Node course.
 The React frontend was provided by the course, and the backend was built from scratch with the instructor.
 
-The project is a simple API that allows to query data about spaceX launches and planets.
+The course is available [here](https://academy.zerotomastery.io/p/learn-node-js).
+
+The project is a simple API that allows to query data about spaceX launches and also populates a list planets from a CSV file from NASA data.
 
 # Table of Contents <!-- omit in toc -->
 
