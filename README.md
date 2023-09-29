@@ -28,7 +28,7 @@ The frontend is old and contains vulnearabilities, so I didn't bother to update 
 - [3. 💣 Tricky parts](#3--tricky-parts)
   - [3.1. In app.js](#31-in-appjs)
   - [3.2. Database logic](#32-database-logic)
-- [Conclusion](#conclusion)
+- [4. Conclusion](#4-conclusion)
 
 # 1. List of what I learned
 
@@ -225,7 +225,7 @@ async function populateLaunches() {
 }
 ```
 
-# Conclusion
+# 4. Conclusion
 
 I learned a really good deal about all the intricacies of Node, internals and overall structure. Things have really taken shape in my head!
 
