@@ -13,6 +13,7 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 
 # Table of Contents <!-- omit in toc -->
 
+- [What we are building](#what-we-are-building)
 - [1. Non-exhaustive list of what I learned](#1-non-exhaustive-list-of-what-i-learned)
 - [2. 🌍 Overview of main sections](#2--overview-of-main-sections)
   - [2.1. 🚀 Launches](#21--launches)
@@ -30,6 +31,11 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
   - [3.2. Database logic](#32-database-logic)
   - [3.3. Node internals: loops and phases](#33-node-internals-loops-and-phases)
 - [4. 📒 Conclusion](#4--conclusion)
+
+# What we are building
+
+Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data.
+![Launch](<[http://url/to/img.png](https://i.ibb.co/2cqFKdg/Screenshot-2023-09-29-at-14-54-53.png)>)
 
 # 1. Non-exhaustive list of what I learned
 
