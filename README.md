@@ -3,16 +3,18 @@
 This follow along project is part of the ZeroToMastery Node course.
 The React frontend was provided by the course, and the backend was built from scratch with the instructor.
 
+The project is a simple API that allows to query data about spaceX launches and planets.
+
 # Table of Contents <!-- omit in toc -->
 
 - [1. List of learning items](#1-list-of-learning-items)
-- [2. Overview of main sections](#2-overview-of-main-sections)
-  - [2.1. Launches](#21-launches)
+- [2. 🌍 Overview of main sections](#2--overview-of-main-sections)
+  - [2.1. 🚀 Launches](#21--launches)
     - [2.1.1. launch.router.js](#211-launchrouterjs)
     - [2.1.2. launch.controller.js](#212-launchcontrollerjs)
     - [2.1.3. launch.model.js](#213-launchmodeljs)
     - [2.1.4. launch.mongo.js](#214-launchmongojs)
-  - [2.2. Planets](#22-planets)
+  - [2.2. 🪐 Planets](#22--planets)
     - [2.2.1. planets.router.js](#221-planetsrouterjs)
     - [2.2.2. planets.controller.js](#222-planetscontrollerjs)
     - [2.2.3. planets.model.js](#223-planetsmodeljs)
@@ -52,9 +54,9 @@ The React frontend was provided by the course, and the backend was built from sc
 30. Using external APIs: running search queries on spaceX
 31. APIs: pagination
 32. APIs: minimizing api load
-33. Managing secrets: .env
+33. Managing secrets: .env file
 
-# 2. Overview of main sections
+# 2. 🌍 Overview of main sections
 
 The app is implementing a Model View Controller pattern, with high separation of concern.
 We have:
@@ -75,7 +77,7 @@ We have:
 10. Additionnaly, in the services folder, we have a file that deals with the external database API, and a file that deals with the queries to the database (here, pagination aspect).
 11. The secret api key is stored in a .env file, and the dotenv package is used to load it.
 
-## 2.1. Launches
+## 2.1. 🚀 Launches
 
 ### 2.1.1. launch.router.js
 
@@ -117,7 +119,7 @@ This is the data access layer file.
 
 This model can be used to perform CRUD operations on the Launch collection in MongoDB.
 
-## 2.2. Planets
+## 2.2. 🪐 Planets
 
 ### 2.2.1. planets.router.js
 
