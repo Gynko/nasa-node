@@ -28,6 +28,7 @@ The frontend is old and contains vulnearabilities, so I didn't bother to update 
 - [3. 💣 Tricky parts](#3--tricky-parts)
   - [3.1. In app.js](#31-in-appjs)
   - [3.2. Database logic](#32-database-logic)
+- [Conclusion](#conclusion)
 
 # 1. List of what I learned
 
@@ -223,3 +224,11 @@ async function populateLaunches() {
   }
 }
 ```
+
+# Conclusion
+
+I learned a really good deal about all the intricacies of Node, internals and overall structure. Things have really taken shape in my head!
+
+Though I think that things will fall more into place as soon as I will write my own project from scratch in a few weeks, and I will be able to apply the concepts I learned here!
+
+I also think it will be beneficial to use a SQL database in my next project, to get a better understanding of the differences between SQL and NoSQL, and to get a better understanding of SQL in general.
