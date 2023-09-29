@@ -35,7 +35,7 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 # What we are building
 
 Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data.
-![Launch](<[http://url/to/img.png](https://i.ibb.co/2cqFKdg/Screenshot-2023-09-29-at-14-54-53.png)>)
+![Launch](https://i.ibb.co/2cqFKdg/Screenshot-2023-09-29-at-14-54-53.png)
 
 # 1. Non-exhaustive list of what I learned
 
