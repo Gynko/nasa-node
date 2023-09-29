@@ -13,7 +13,7 @@ The frontend is old and contains vulnerabilities, so I didn't bother to update i
 
 # Table of Contents <!-- omit in toc -->
 
-- [1. List of what I learned](#1-list-of-what-i-learned)
+- [1. Non-exhaustive list of what I learned](#1-non-exhaustive-list-of-what-i-learned)
 - [2. 🌍 Overview of main sections](#2--overview-of-main-sections)
   - [2.1. 🚀 Launches](#21--launches)
     - [2.1.1. launch.router.js](#211-launchrouterjs)
@@ -30,7 +30,7 @@ The frontend is old and contains vulnerabilities, so I didn't bother to update i
   - [3.2. Database logic](#32-database-logic)
 - [4. 📒 Conclusion](#4--conclusion)
 
-# 1. List of what I learned
+# 1. Non-exhaustive list of what I learned
 
 1. Node internals: js engine, apis, bindings, libuv
 2. Callback queues
