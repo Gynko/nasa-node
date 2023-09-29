@@ -7,7 +7,7 @@ The project is a simple API that allows to query data about spaceX launches and 
 
 # Table of Contents <!-- omit in toc -->
 
-- [1. List of learning items](#1-list-of-learning-items)
+- [1. List of what I learned](#1-list-of-what-i-learned)
 - [2. 🌍 Overview of main sections](#2--overview-of-main-sections)
   - [2.1. 🚀 Launches](#21--launches)
     - [2.1.1. launch.router.js](#211-launchrouterjs)
@@ -20,7 +20,7 @@ The project is a simple API that allows to query data about spaceX launches and 
     - [2.2.3. planets.model.js](#223-planetsmodeljs)
     - [2.2.4. planets.mongo.js](#224-planetsmongojs)
 
-# 1. List of learning items
+# 1. List of what I learned
 
 1. Node internals: js engine, apis, bindings, libuv
 2. Callback queues
