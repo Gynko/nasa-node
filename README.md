@@ -5,7 +5,7 @@ The React frontend was provided by the course, and the backend was built from sc
 
 The course is available [here](https://academy.zerotomastery.io/p/learn-node-js).
 
-The server queries data from the spaceX launches API, https://github.com/r-spacex/SpaceX-API, and also populates a list of planets from a CSV file downloaded on the NASA website.
+The server queries data from the spaceX launches API, https://github.com/r-spacex/SpaceX-API. We also populate a list of planets from a CSV file downloaded on the NASA website, from which we filtered some data.
 
 Since the course is a bit old (in tech time scale, one year old may be a lot! :D), I had to make some changes to the code to make it work with the latest versions of node, express, mongoose, etc.
 
