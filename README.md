@@ -1,6 +1,6 @@
 # Learning Node - Nasa Project <!-- omit in toc -->
 
-This follow along project is part of the ZeroToMastery Node course.
+This follow along project is part of my Learning at school and part of the ZeroToMastery Node course.
 The React frontend was provided by the course, and the backend was built from scratch with the instructor.
 
 The course is available [here](https://academy.zerotomastery.io/p/learn-node-js).
