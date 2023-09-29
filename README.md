@@ -1,6 +1,6 @@
 # Learning Node - Nasa Project <!-- omit in toc -->
 
-This follow along project is part of my Learning at school and part of the ZeroToMastery Node course.
+This follow-along project is part of my Learning at school and part of the ZeroToMastery Node course.
 The React frontend was provided by the course, and the backend was built from scratch with the instructor.
 
 The course is available [here](https://academy.zerotomastery.io/p/learn-node-js).
@@ -34,13 +34,13 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 
 # 1. What we are building
 
-Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data.
+Here we can create Launches. The destination explanet dropdown is made of planet extracted and filtered from a CSV file from NASA data, with Node and its tools. List hosted on mongoDB.
 ![Launch](https://i.postimg.cc/QCTzXZG7/Screenshot-2023-09-29-at-14-54-53.png)
 
 Here in Launch we have a list of all the launches that are not aborted. We can abort them.
 ![Upcoming](https://i.ibb.co/7GsCBLs/Screenshot-2023-09-29-at-14-55-02.png)
 
-Here we have a list of all launches past and present.
+Here we have a list of all launches past and present. Hosted on mongoDB.
 ![History](https://i.ibb.co/h1tk46y/Screenshot-2023-09-29-at-14-55-09.png)
 
 # 2. Non-exhaustive list of what I learned
