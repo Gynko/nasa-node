@@ -73,6 +73,7 @@ We have:
 9. controller.js: Contains the logic to handle specific routes.
    Acts as an intermediary between the router and the model, taking input from the router, processing it (if needed), calling the model for data, and sending a response back.
 10. Additionnaly, in the services folder, we have a file that deals with the external database API, and a file that deals with the queries to the database (here, pagination aspect).
+11. The secret api key is stored in a .env file, and the dotenv package is used to load it.
 
 ## 2.1. Launches
 
