@@ -28,6 +28,7 @@ The frontend is old and contains vulnerabilities. I didn't bother to update it, 
 - [3. 💣 Tricky parts](#3--tricky-parts)
   - [3.1. In app.js](#31-in-appjs)
   - [3.2. Database logic](#32-database-logic)
+  - [3.3. Node internals: loops and phases](#33-node-internals-loops-and-phases)
 - [4. 📒 Conclusion](#4--conclusion)
 
 # 1. Non-exhaustive list of what I learned
@@ -235,6 +236,12 @@ async function populateLaunches() {
   }
 }
 ```
+
+## 3.3. Node internals: loops and phases
+
+There is an incredible amount of processes going on under the hood of Node, and it is really interesting to learn about them, but challenging to weave all the parts together.
+
+This is one part that I want to get back to again later.
 
 # 4. 📒 Conclusion
 
