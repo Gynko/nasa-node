@@ -11,7 +11,7 @@ jobs:
       MONGO_URL: mongodb://localhost/nasa
     strategy:
       matrix:
-        node-version: [16, 18]
+        node-version: [18]
         mongodb-version: [7]
     runs-on: ubuntu-latest
     steps:
