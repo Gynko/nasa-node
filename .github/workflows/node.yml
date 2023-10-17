@@ -12,7 +12,5 @@ jobs:
       - name: Use Node.js 16
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: "npm"
+          node-version: 18
       - run: npm run install
-      - run: npm run build --prefix client
