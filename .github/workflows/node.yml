@@ -14,4 +14,4 @@ jobs:
         with:
           node-version: 18
       - run: npm run install
-      - run: npm run client
+      - run: npm run deploy
