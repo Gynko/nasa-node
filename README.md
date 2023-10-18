@@ -89,6 +89,8 @@ Here we have a list of all launches past and present. Hosted on mongoDB.
 42. APIs: pagination
 43. APIs: minimizing api load
 44. Managing secrets: .env file
+45. CI CD: docker
+46. AWS EC2
 
 # 3. 🌍 Overview of main sections
 
